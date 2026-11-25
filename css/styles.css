@@ -1,0 +1,136 @@
+/* importing google web font */
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+/* importing Font Awesome CSS library */
+@import url("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css");
+
+:root {
+    --base-color: #3D5170;
+    --accent-color: #6f7276;
+}
+
+.g-base {
+    background-color: #FFFFFF;
+    color: var(--base-color);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+}
+
+header {
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 0;
+    border-bottom: dotted 2px var(--base-color);
+}
+
+.g-heading {
+    font-family: "share tech";
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.g-sub-heading {
+    font-size: 1rem;
+    letter-spacing: 8px;
+    font-weight: 600;
+    color: var(--accent-color);
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--base-color);
+
+    &:visited {
+        color: var(--base-color);
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+nav a:hover {
+    color: #6f7276;
+}
+
+#p-home #s-thumbnails figure,
+#p-poster #s-image figure {
+    margin: 0px;
+}
+
+#p-home #s-thumbnails figcaption,
+#p-poster #s-image figcaption {
+    font-size: 0.8rem;
+    font-weight: 900;
+    color: var(--accent-color);
+    padding-top: 3px;
+}
+
+#p-home #s-footer {
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+#p-home #s-aside {
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+#p-home #s-thumbnails {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 20px;
+}
+
+img {
+    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+}
+
+#p-poster #s-navigation {
+    padding: 20px 0;
+    display: flex;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+}
+
+#p-poster #s-navigation i {
+    padding-right: 8px;
+}
+
+#p-poster #s-navigation .nav-link {
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+#p-poster #s-navigation .nav-link:nth-of-type(3) {
+    padding-left: 20px;
+    border-left: 2px dotted var(--accent-color);
+}
+
+@media (max-width: 500px) {
+    #p-home #s-thumbnails {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #p-home #s-thumbnails figure {
+        padding-right: 0px;
+    }
+}
